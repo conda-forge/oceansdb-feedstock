@@ -1,17 +1,17 @@
 {% set name = "OceansDB" %}
-{% set version = "0.8.11" %}
+{% set version = "0.8.12" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz"
-  sha256: 8c98d6fe70a14e6f2c8cef07de6bd83e0a24f743f4144dc4e1a66ba7dd6373a6
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: b6aa9c4da9fa0d5b84bb1cb46eaac1b1b41cbcdf3529dd3187599ef0e7ebbd00
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -34,13 +34,13 @@ test:
     - pip check
 
 about:
-  home: "https://github.com/castelao/oceansdb"
+  home: https://github.com/castelao/oceansdb
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: "Package to subsample ocean climatologies and reference data."
-  doc_url: "https://oceansdb.readthedocs.io"
-  dev_url: "https://github.com/castelao/oceansdb"
+  summary: Package to subsample ocean climatologies and reference data.
+  doc_url: https://oceansdb.readthedocs.io
+  dev_url: https://github.com/castelao/oceansdb
 
 extra:
   recipe-maintainers:
