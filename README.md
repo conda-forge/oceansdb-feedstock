@@ -5,11 +5,13 @@ Home: https://github.com/castelao/oceansdb
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oceansdb-feedstock/blob/master/LICENSE.txt)
 
 Summary: Package to subsample ocean climatologies and reference data.
 
+Development: https://github.com/castelao/oceansdb
 
+Documentation: https://oceansdb.readthedocs.io
 
 Current build status
 ====================
