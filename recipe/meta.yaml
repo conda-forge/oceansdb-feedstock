@@ -1,5 +1,5 @@
 {% set name = "OceansDB" %}
-{% set version = "0.8.12" %}
+{% set version = "0.8.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: b6aa9c4da9fa0d5b84bb1cb46eaac1b1b41cbcdf3529dd3187599ef0e7ebbd00
+  sha256: bafd1b1a3eb2adc09123b0d4fbc39af2624d8f1f52573a14ce040e7264333cf7
 
 build:
   number: 0
