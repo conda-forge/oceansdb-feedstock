@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python>=3.6
   run:
     - netcdf4 >=1.2.4
     - numpy >=1.14
-    - python
+    - python>=3.6
     - scipy >=1.1
     - supportdata >=0.1.3
 
