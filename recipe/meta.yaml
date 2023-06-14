@@ -10,18 +10,18 @@ source:
   sha256: 807f654a82c98ae733b24737d751d7bc0630121de9324218e8405397a362053c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python>=3.6
+    - python >=3.6
   run:
+    - python >=3.6
     - netcdf4 >=1.2.4
     - numpy >=1.14
-    - python>=3.6
     - scipy >=1.1
     - supportdata >=0.1.3
 
