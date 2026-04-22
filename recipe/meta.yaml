@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: 17dc46045e2fe86c8967f8dd583bb161638e70b29850d67cceec3b09e14c937e
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - netcdf4 >=1.2.4
     - numpy >=1.14
     - scipy >=1.1
@@ -30,6 +30,7 @@ test:
     - oceansdb
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
